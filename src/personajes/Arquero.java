@@ -9,12 +9,12 @@ package personajes;
 public class Arquero extends Personaje{
 
     public Arquero(String nombre) {
-        super(nombre, 50, 15);
+        super(nombre, 40, 20);
     }
 
     @Override
     public void atacar(Personaje enemigo) {
-        System.out.println(nombre + " lanza una bola de fuego.");
+        System.out.println(nombre + " lanza una flecha.");
         System.out.println(enemigo);
         enemigo.recibirDanio(ataque);
     }
