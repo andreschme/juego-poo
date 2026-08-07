@@ -39,8 +39,8 @@ public class JuegoPOO extends JFrame {
         setLayout(new FlowLayout());
 
         // Menús desplegables para elegir personajes
-        comboJugador1 = new JComboBox<>(new String[]{"Guerrero", "Mago", "Arquero", "Hechicero"});
-        comboJugador2 = new JComboBox<>(new String[]{"Guerrero", "Mago", "Arquero", "Hechicero"});
+        comboJugador1 = new JComboBox<>(new String[]{"Guerrero", "Mago", "Arquero", "Hechicero", "Soldado"});
+        comboJugador2 = new JComboBox<>(new String[]{"Guerrero", "Mago", "Arquero", "Hechicero", "Soldado"});
 
         // Botones para iniciar el juego y atacar
         btnIniciar = new JButton("Iniciar Batalla");
@@ -185,6 +185,7 @@ public class JuegoPOO extends JFrame {
             case "Mago": return new Mago("Mago");
             case "Arquero": return new Arquero("Arquero");
             case "Hechicero": return new Hechicero("Hechicero");
+            case "Soldado": return new Soldado("Soldado");
             default: return null;
         }
     }
